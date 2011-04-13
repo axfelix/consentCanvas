@@ -1,0 +1,61 @@
+ConsentCanvas
+
+ABOUT
+
+	ConsentCanvas uses unsupervised natural language processing (NLP)
+	techniques to make end-user license agreements (EULAs) more readable.
+	A plaintext EULA is the input, and the output is an HTML5 document.
+
+REQUIREMENTS
+
+	ConsentCanvas requires:
+
+		Python 2.6.5+
+		NLTK 2.0b9
+		a modified version of the markup library
+			(originally from http://markup.sourceforge.net)
+			(this is included in markup.py)	
+
+
+USE
+
+	To use ConsentCanvas, type:
+
+		python ConsentCanvas.py <eula>
+
+	where <eula> is a plaintext end user license agreement. The HTML5
+	document will be printed to standard output, so you may want to
+	use the following command on a Unix system:
+
+		python ConsentCanvas.py <eula> > output.html
+
+	Then, copy textured-agreement-clean-1.css to the same folder as
+	your output file (output.html in this case), and open your output
+	file with your favourite browser.
+
+
+NOTES ON COMPLETENESS
+
+	ConsentCanvas is a work-in-progress. Although this is a working
+	implementation, many improvements are necessary before it can
+	reliably improve readability. As well, no official verification
+	of said improvements have yet been conducted.
+
+
+LICENSE
+
+    Copyright (C) 2011  Oliver Schneider and Alex Garnett.
+
+	This program is free software: you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
+
+	You should have received a copy of the GNU General Public License
+	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
